@@ -1,8 +1,10 @@
 package com.unifor.orfanato_batista.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -25,5 +27,7 @@ public class Noticias {
 
     private String descricao;
 
-    private LocalDateTime data;
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate data;
 }
