@@ -57,11 +57,15 @@
 			<scope>provided</scope>
 		</dependency>
 
+
+		<!-- lookup parent from repository
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<version>3.3.3</version>
 		</dependency>
+
+		-->
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
